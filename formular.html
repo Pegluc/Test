@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Snow Water of Switzerland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/formular.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.png">
+  <style>
+    @font-face {
+    font-family: MMB;
+    src: url('T-26 - Minerva Modern Regular.otf') format('truetype');
+    }
+</style>
+</head>
+
+<body>
+  <div class="logo">
+    <a href="./main.html"><img src="images/logo-light.png" alt="Logo Snow water of Switzerland"></a>
+  </div>
+  <div class="main">
+
+    <div class="backgroundImage">
+      <picture>
+        <source media="(max-width: 1100px)" srcset="images/receive-hochkant.jpg" />
+        <img src="images/receive.jpg" class="d-block w-100 h-100" alt="Flise am Pool mit Logo">
+      </picture>
+    </div>
+    <div class="formContainer">
+      <div class="backBtnDiv">
+        <a href="./main.html"><button  class="btn" type="button">Back</button></a>
+      </div>
+      <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="row">
+              <div class="col-md-4">
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Salutation*</option>
+                  <option class="optionOne">Mr.</option>
+                  <option>Mrs.</option>
+                  <option>Ms.</option>
+                  <option>Mx.</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a form of address.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="validationCustom02" placeholder="First name">
+              </div>  
+            <div class="col-md-4">
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name*" required>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+              <input type="text" class="form-control email" id="emailInput" placeholder="Email address*" required>
+              <div class="invalid-feedback">
+                Please enter your email address.
+              </div>
+          </div>
+            <div class="col-md-12 mb-3">
+              <input type="number" class="form-control" placeholder="Phone number">
+            </div>
+            <div class="col-md-12 mb-3">
+              <label for="Textarea1" class="form-label">Write your message here...</label>
+              <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+            </div>
+
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+          </form>
+        </div>
+
+        <div class="overlay" id="overlay" onclick="off(0)">
+          <div class="textContainer">
+            <p>Thank you so much for your message! <br>You will receive a reply within 24 hours.</p>
+            <a href="./main.html"><button  class="btn" type="submit">OK</button></a>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footerImg">
+            <img src="images/logob.png"/>
+            <p>© Snow Water of Switzerland</p>
+          </div>
+          <a href="./impressum.html">Legal Notice</a>
+          <a href="./datenschutz.html">Privacy Policy</a>
+        </div>
+
+    </div>
+</body>
+
+      <script>
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+     (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          /*Überprüfung ob eine gültige Email-Adresse eingegeben wurde*/
+          const emailInput = document.getElementById('emailInput');
+          const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+          emailInput.addEventListener('input', function() {
+          if (emailRegex.test(this.value)) {
+          this.setCustomValidity('');
+          } else {
+            this.setCustomValidity('Please enter a valid email address');
+            }
+          });
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              else if (form.checkValidity() === true) {
+                verification ();
+                event.preventDefault();
+                event.stopPropagation();
+              }
+            form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+     function verification () {
+       document.querySelector("#overlay").style.display = "flex";
+      }
+
+    function off() {
+      document.querySelector("#overlay").style.display = "none";
+    }
+      </script>
+
+  </div>
+    <script src="js/bootstrap_js/bootstrap.bundle.min.js"></script>
+
+
+
+</html>

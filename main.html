@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Snow water of Switzerland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styleMain.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon.png">
+  <style>
+    @font-face {
+    font-family: MMB;
+    src: url('T-26 - Minerva Modern Regular.otf') format('truetype');
+    }
+    @font-face {
+    font-family: MMB-Bold;
+    src: url('MinervaModernBlack.ttf') format('truetype');
+    }
+</style>
+</head>
+
+<body oncontextmenu="return false" onload="playVideo()">
+  <div class="main">
+
+    <div class="top">
+      <div class="sectionOne">
+        <video class="mainMov" src="images/bergflug.mp4" playsinline ></video>
+        <div class="logoUndBtn">
+          <img class="logo" src="images/snow-water-logo-full.png" alt="Logo Snow water of Switzerland">
+          <p>Experience luxury in its purest form</p>
+            <div class="buttonDiv">
+              <a href="formular.html" class="button">
+                <button type="button" class="myBtn">let's connect</button>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="sectionTow">
+        <div id="celias-Slider" class="carousel slide carousel-fade" data-bs-pause="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#celias-Slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              <span></span>
+            </button>
+            <button type="button" data-bs-target="#celias-Slider" data-bs-slide-to="1" aria-label="Slide 2">
+              <span></span>
+            </button>
+            <button type="button" data-bs-target="#celias-Slider" data-bs-slide-to="2" aria-label="Slide 3">
+              <span></span>
+            </button>
+            <button type="button" data-bs-target="#celias-Slider" data-bs-slide-to="3" aria-label="Slide 4">
+              <span></span>
+            </button>
+            <button type="button" data-bs-target="#celias-Slider" data-bs-slide-to="4" aria-label="Slide 5">
+              <span></span>
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"> <!--Item1-->
+              <picture>
+                <source media="(max-width: 1100px)" srcset="images/treppe-hochkant.webp" />
+                <img src="images/treppe.webp" class="d-block w-100" alt="Flise am Pool mit Logo">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5>Snow Water</h5>
+                <p class="vorschauText">
+                  Immerse yourself <br> in unrivalled luxury reserved <br> for only the finest
+                </p>
+                <button type="button" class="myBtn" onclick="on(0)">Find out more</button>
+              </div>
+            </div>
+            <div class="carousel-item"> <!--Item2-->
+              <picture>
+                <source media="(max-width: 870px)" srcset="images/relief.webp" />
+                <img src="images/reli.webp" class="d-block w-100" alt="Zertifikat">
+              </picture>
+              <div class="carousel-caption d-sm-block certificate">
+                <h5>Certificate of Origin</h5>
+                <p class="vorschauText">
+                  An official stamp and signature <br> from the St. Moritz municipality <br> certify the authenticity
+                </p>
+                <button type="button" class="myBtn" onclick="on(1)">Find out more</button>
+              </div>
+            </div>
+            <div class="carousel-item"> <!--Item3-->
+              <picture>
+                <source media="(max-width: 590px)" srcset="images/signatur-hochkant.png" />
+                <img src="images/signatur.png" class="d-block w-100" alt="Berglandschaft">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5>Pool Plaquette</h5>
+                <p class="vorschauText">
+                  Your unique vision and style <br> become the center of attention <br> as we collaborate on the perfect
+                </p>
+                <button type="button" class="myBtn"  onclick="on(2)">Find out more</button>
+              </div>
+            </div>
+            <div class="carousel-item"> <!--Item4-->
+              <picture>
+                <source media="(max-width: 590px)" srcset="images/berg-hochformat.webp" />
+                <img src="images/berge.webp" class="d-block w-100" alt="Treppen die in einen Pool fuehren">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5>Service Pledge</h5>
+                <p class="vorschauText">
+                  We are dedicated <br> to provide <i>Snow Water</i> of only <br> the finest quality. This commitment
+                </p>
+                <button type="button" class="myBtn"  onclick="on(3)">Find out more</button>
+              </div>
+            </div>
+            <div class="carousel-item"> <!--Item5-->
+              <picture>
+                <source media="(max-width: 590px)" srcset="images/pool-hochkantOne.webp" />
+                <img src="images/pool.webp" class="d-block w-100" alt="Liegen am Pool">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5>Your Peace of Mind</h5>
+                <p class="vorschauText">
+                  Through the electrically powered vehicles that <br> make up the transport of <i>Snow Water’s</i> <br> journey within Switzerland, our eco-friendly
+                </p>
+                <button type="button" class="myBtn"  onclick="on(4)">Find out more</button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#celias-Slider" role="button" onclick="prevSlide()">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#celias-Slider" role="button" onclick="nextSlide()">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+      </div>
+     </div>
+    </div>
+
+    <div class="footer">
+      <div class="footerImg">
+        <img src="images/logob.png" />
+        <p>© Snow Water of Switzerland</p>
+      </div>
+      <a href="./impressum.html">Legal Notice</a>
+      <a href="./datenschutz.html">Privacy Policy</a>
+    </div>
+
+    <!-- Overlay Texte -->
+
+    <!-- Overlay Item1-->
+      <div class="overlay" id="overlay" onclick="off(0)">
+      <div class="textContainer">
+        <div class="snowImg">
+          <img class="flocke" src="images/logob.png" alt="Schneeflocke"/>
+          <img class="cross" src="images/closeBtn.png" alt="close X" />
+        </div>
+        <h1>Snow Water</h1>
+        <p>
+          Immerse yourself <br> in unrivalled luxury reserved for only<br>the finest swimming pools of this world.<br>
+          <i>Snow Water of Switzerland</i>, is sourced exclusively for you from the Swiss Alps in beautiful St. Moritz.
+          The snow water is created by the seasonal snowfall between December and March of every year and will be gathered and melted on-site upon request. <br>
+          The melted snow is then filtered and tested <br> to ensure the purest quality of each drop <br> before embarking  on its journey to your swimming sanctuary. <br><br>
+          Unlike anything you've ever owned.<br>
+          Experience luxury in its purest form.        
+        </p>
+      </div>
+      <div class="imgContainer">
+        <img src="images/treppe-hochkant.webp" alt="Fliese am Pool mit Logo">
+      </div>
+    </div>
+
+    <!-- Overlay Item2 -->
+    <div class="overlay" onclick="off(1)">
+      <div class="textContainer">
+        <div class="snowImg">
+          <img src="images/logob.png" alt="Schneeflocke" />
+          <img class="cross" src="images/closeBtn.png" alt="close X" />
+        </div>
+          <h1>Certificate of Origin</h1>
+          <p>
+            An official stamp and signature <br> from the St. Moritz municipality <br> certify the authenticity of <i>Snow Water's</i> origin. The certificate is paired with a finely crafted mountain relief of St. Moritz, Switzerland, representing <i>Snow Water's</i> source. <br><br> The certificate of origin and the mountain relief are presented in a beautiful encasement.<br>
+            This encasement is customisable                                                                              
+            and provides an opportunity for you to create a perfect and unique gift.
+          </p>
+      </div>
+      <div class="imgContainer">
+        <img src="images/relief.webp" alt="Zertifikat">
+      </div>
+    </div>
+
+    <!-- Overlay Item3 -->
+    <div class="overlay" onclick="off(2)">
+      <div class="textUndImg">
+          <div class="textContainer">
+            <div class="snowImg">
+              <img src="images/logob.png" alt="Schneeflocke" />
+              <img class="cross" src="images/closeBtn.png" alt="close X" />
+            </div>
+              <h1>Pool Plaquette</h1>
+              <p>
+                Your unique vision and style become the center of attention as we collaborate on the perfect pool plaquette, personalised to complement the exterior of your pool.
+              </p>
+              <p>
+                Each pool plaquette is engraved with a unique code verifying the origin and authenticity of your <i>Snow Water</i>.<br>
+                Any pool with our plaquette <br> can therefore be verified <br> by clicking the button below:
+              </p>
+              <div class="verificationButtonDiv">
+                <a class="verifyAPlaquetteBtn" href="verification.html">
+                  <button type="button" class="myBtn">
+                    verify a plaquette
+                  </button>
+                </a>  
+              </div>
+          </div>
+          <div class="imgContainer">
+            <img src="images/signatur-hochkant.png" alt="Treppe die in einen Pool fuehrt">
+          </div>
+      </div>
+    </div>
+
+    <!-- Overlay Item4 -->
+    <div class="overlay" onclick="off(3)">
+      <div class="textContainer">
+        <div class="snowImg">
+          <img src="images/logob.png" alt="Schneeflocke" />
+          <img class="cross" src="images/closeBtn.png" alt="close X" />
+        </div>
+        <h1>Service Pledge</h1>
+        <p>
+          We are dedicated to provide <i>Snow Water</i> of only the finest quality.
+          This commitment extends to our thorough filtration process, and scientifically-based four-point testing, guaranteeing swimming pool water of drinkable quality.<br><br>
+          We have partnered <br> with an exceptional transportation company <br> to ensure a seamless journey from the mountains of St. Moritz to your private oasis. Whether you choose your preferred delivery route by air, land or ship - we’ve got it covered.
+        </p>
+      </div>
+      <div class="imgContainer">
+        <img src="images/berg-hochformat.webp" alt=" Berglandschaft">
+      </div>
+    </div>
+
+    <!-- Overlay Item 5 -->
+    <div class="overlay" onclick="off(4)">
+      <div class="textContainer">
+        <div class="snowImg">
+          <img src="images/logob.png" alt="Schneeflocke" />
+          <img class="cross" src="images/closeBtn.png" alt="close X" />
+        </div>
+        <h1>Your Peace of Mind</h1>
+        <p>
+          Through the electrically powered vehicles that make up the transport of <i>Snow Water’s</i> journey within Switzerland, our eco-friendly approach ensures that nature remains unharmed by carbon impact.
+           <br>Approved by the St. Moritz community, and boasting minimal emissions during the entire inland transportation phase, we are <br> proud to say that the melting process <br> of the snow, in particular, is achieved with zero carbon emission and zero noise pollution. 
+          <br><br> Welcome to a world where luxury meets environmental responsibility.
+        </p>
+      </div>
+      <div class="imgContainer">
+        <img src="images/pool-hochkantOne.webp" alt="Pool">
+      </div>
+    </div>
+
+  </div>
+
+    <script src="js/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="js/mainScript.js"></script>
+  </body>
+
+
+
+</html>
